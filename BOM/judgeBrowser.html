@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		var system = {};
+		var p = navigator.platform;
+  	    system.win = p.indexOf('Win') == 0;
+  	    system.mac = p.indexOf('Mac') == 0;
+  	    system.x11 = (p == 'X11')||(p.indexOf('Linux') == 0);
+  	    if(system.win || system.mac || system.x11){
+  	    	alert("我是电脑浏览器");
+  	    }else{
+  	    	alert("我是手机浏览器");
+  	    }
+	</script>
+</html>
+
